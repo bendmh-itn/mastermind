@@ -11,6 +11,7 @@ namespace mastermind
             Afficher(combi);
         }
 
+        
         static void ChoixCombi(out int[] combi){
             combi = new int[4];
             for(int i = 0; i <= 3; i++){
