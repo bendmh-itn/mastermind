@@ -11,7 +11,7 @@ namespace mastermind
             Afficher(combi);
         }
 
-        
+        //Cette fonction permet à l'ordinateur de choisir une combinaison de 4 chiffres
         static void ChoixCombi(out int[] combi){
             combi = new int[4];
             Random rnd = new Random();
