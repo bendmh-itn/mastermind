@@ -20,7 +20,7 @@ namespace mastermind
                 combi[i] = valeur;
             }
         }
-
+        //cette fonction affiche un tableau
         static void Afficher(int[] combi) {
             for(int i = 0; i <= 3; i++){
                 Console.Write(combi[i]);
