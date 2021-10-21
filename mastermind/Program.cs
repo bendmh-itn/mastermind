@@ -9,6 +9,9 @@ namespace mastermind
 			int[] combi;
             ChoixCombi(out combi);
             Afficher(combi);
+            Console.WriteLine();
+            Console.WriteLine("Entrez une combinaison");
+            proposition = Console.ReadLine();
         }
 
         //Cette fonction permet à l'ordinateur de choisir une combinaison de 4 chiffres

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\demab.asty-moulin.000\\Desktop\\mastermind\\mastermind.csproj": {}
+    "C:\\Users\\demab.asty-moulin.000\\Documents\\mastermind\\mastermind\\mastermind.csproj": {}
   },
   "projects": {
-    "C:\\Users\\demab.asty-moulin.000\\Desktop\\mastermind\\mastermind.csproj": {
+    "C:\\Users\\demab.asty-moulin.000\\Documents\\mastermind\\mastermind\\mastermind.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\demab.asty-moulin.000\\Desktop\\mastermind\\mastermind.csproj",
+        "projectUniqueName": "C:\\Users\\demab.asty-moulin.000\\Documents\\mastermind\\mastermind\\mastermind.csproj",
         "projectName": "mastermind",
-        "projectPath": "C:\\Users\\demab.asty-moulin.000\\Desktop\\mastermind\\mastermind.csproj",
+        "projectPath": "C:\\Users\\demab.asty-moulin.000\\Documents\\mastermind\\mastermind\\mastermind.csproj",
         "packagesPath": "C:\\Users\\demab.asty-moulin.000\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\demab.asty-moulin.000\\Desktop\\mastermind\\obj\\",
+        "outputPath": "C:\\Users\\demab.asty-moulin.000\\Documents\\mastermind\\mastermind\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
