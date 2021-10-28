@@ -4,6 +4,7 @@ namespace mastermind
 {
     class Program
     {
+        // Cette fonction est le départ du programme
         static void Main(string[] args)
         {
 			int[] combi;
