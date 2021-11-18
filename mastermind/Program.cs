@@ -8,11 +8,14 @@ namespace mastermind
         static void Main(string[] args)
         {
 			int[] combi;
+            int[] propositionTableau;
             ChoixCombi(out combi);
             Afficher(combi);
-            Console.WriteLine();
+            
             Console.WriteLine("Entrez une combinaison");
             proposition = Console.ReadLine();
+            StringToArray(proposition, propositionTableau);
+            Afficher(propositionTableau);
         }
 
         //Cette fonction permet à l'ordinateur de choisir une combinaison de 4 chiffres
@@ -29,7 +32,16 @@ namespace mastermind
             for(int i = 0; i <= 3; i++){
                 Console.Write(combi[i]);
             }
+            Console.WriteLine();
         }
 		
+        static void StringToArray(proposition, out int[] propositionTableau){
+            propositionTableau = new int[4];
+
+            for(int i = 0; i <= 3; i++){
+                propositionTableau[i] = proposition[i];
+            }
+        }
+
     }
 }
