@@ -9,13 +9,20 @@ namespace mastermind
         {
 			int[] combi;
             int[] propositionTableau;
+            string proposition;
+            int nombrePionsRouges;
+            int nombrePionsBlancs;
+
+
             ChoixCombi(out combi);
             Afficher(combi);
-            
             Console.WriteLine("Entrez une combinaison");
             proposition = Console.ReadLine();
-            StringToArray(proposition, propositionTableau);
-            Afficher(propositionTableau);
+            StringToArray(proposition, out propositionTableau);
+            PionsRouges(propositionTableau, combi, out nombrePionsRouges);
+            Console.WriteLine(nombrePionsRouges);
+            PionsBlancs(propositionTableau, combi, out nombrePionsBlancs);
+            Console.WriteLine(nombrePionsBlancs);
         }
 
         //Cette fonction permet à l'ordinateur de choisir une combinaison de 4 chiffres
@@ -35,13 +42,37 @@ namespace mastermind
             Console.WriteLine();
         }
 		
-        static void StringToArray(proposition, out int[] propositionTableau){
+        static void StringToArray(string proposition, out int[] propositionTableau){
             propositionTableau = new int[4];
 
             for(int i = 0; i <= 3; i++){
-                propositionTableau[i] = proposition[i];
+                propositionTableau[i] = int.Parse(proposition[i].ToString());
             }
         }
+
+        static void PionsRouges(int[] propositionTableau, int[] combi, out int nombrePionsRouges){
+            nombrePionsRouges = 0;
+            for(int i = 0; i <= 3; i++){
+                if(propositionTableau[i] == combi[i]){
+                    nombrePionsRouges++;
+                    propositionTableau[i] = -1;
+                    combi[i] = -2;
+                }
+            }
+        }
+
+        static void PionsBlancs(int[] propositionTableau, int[] combi, out int nombrePionsBlancs){
+            nombrePionsBlancs = 0;
+            for(int i = 0; i <= 3; i++){
+                for(int j=0; j <=3; j++){
+                    if(propositionTableau[i] == combi[j]){
+                        nombrePionsBlancs++;
+                        propositionTableau[i] = -1;
+                    }
+                } 
+            }
+        }
+
 
     }
 }
